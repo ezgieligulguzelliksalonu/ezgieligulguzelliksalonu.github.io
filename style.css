@@ -1,0 +1,307 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+/*HEADER START*/
+.header .container{
+    max-width: 1170px;
+    padding: 0px 15px;
+}
+.header{
+    background-image: url(arkaplan.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+.header-logo img{
+    width: 60%;
+}
+.header-navbar h2{
+    font-family: 'Italianno', cursive;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+ul{
+    display: flex;
+}
+li{
+    margin-left: 27px;
+}
+.header-menu a{
+    color: #fff;
+    font-size: 15px;
+}
+.header-text{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-text h1{
+    font-size: 7.5rem;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    color: #dcc87c;
+}
+.header-text h1 .first-letter{
+    font-size: 9.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+.header-text h3{
+    font-size: 22px;
+}
+/*HEADER FINISH*/
+/*ABOUT START*/
+.about{
+    padding-top: 50px;
+    height: 60vh;
+    background-color: black;
+}
+.about .container{
+    max-width: 1170px;
+    margin-left: 100px;
+}
+.about-img{
+    width: 40%;
+}
+.about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-text{
+    color: #fff;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.abot-text{
+    width: 40%;
+}
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 50px;
+    color: #dcc87c;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+h4 .first-letter-two{
+    font-size: 60px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+#asteriks{
+    color: #dcc87c;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+}
+/*ABOUT FINISH*/
+/*PORTFOLİO START*/
+.portfolio-title{
+    background-color: #000;
+}
+.portfolio-title h2{
+    color: #dcc87c;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 40px;
+    font-size: 60px;
+    font-weight: 100;
+    font-family:'Herr Von Muellerhoff', cursive;
+}
+.portfolio{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+    width: 20%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #dcc87c;
+    opacity: 0.8;
+    position: absolute;
+    top: 100;
+    left: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: 1s;
+}
+.portfolio-item:hover .overlay{
+    top: 0;
+}
+.portfolio-item:hover img{
+    transform: scale(1.1);
+}
+
+/*PORTFOLİO FINISH*/
+/*CONTACT START*/
+
+.contact{
+    background-color: black;
+}
+.contact h2{
+    color: #dcc87c;
+    padding: 40px;
+    text-align: center;
+}
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-item{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.contact-item a{
+    color: #dcc87c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-item p{
+    font-size: 14px;
+    line-height: 33px;
+}
+/*CONTACT FINISH*/
+
+#menu-icon{
+    color: #dcc87c;
+    margin-left: 20px;
+    display: none;
+}
+
+@media only screen and (max-width:800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100;
+        left: 0;
+        overflow: hidden;
+        background-color: #dcc87c;
+        width: 100%;
+        transition: max-height .5s;
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu ul li a{
+        color: #fff;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:990px){
+    .about-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-text{
+        width: 100%;
+    }
+}
+/*PORTFOLİO*/
+@media only screen and (max-width:990px){
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width:580px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 30px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
