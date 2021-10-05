@@ -1,1 +1,0 @@
-# ezgieligulguzelliksalonu.github.io
